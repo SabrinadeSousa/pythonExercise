@@ -1,3 +1,18 @@
+''''
+Receber os seguintes dados (pode ser via console - input()):
+Nome da Disciplina
+Carga Horária
+Assunto da disciplina-1
+Assunto da disciplina-2
+Assunto da disciplina-3
+Assunto da disciplina-4
+Criar um documento (DOCX) com os dados acima apresentando o Layout:
+Disciplina: XXXXXXXXXXX
+Com carga horária de 99 horas.
+Conteúdo da disciplina
+'''
+
+
 from docx import Document
 
 document = Document()
@@ -6,7 +21,6 @@ head = document.add_heading("Grade Currícular")
 disc = input("Qual a disciplina?: ")
 p = document.add_paragraph("Disciplina: ")
 p.add_run(disc).bold = True
-
 
 carga = input("Qual a carga horária?: ")
 p = document.add_paragraph("Com carga horária de: ")

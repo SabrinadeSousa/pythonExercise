@@ -3,6 +3,12 @@
 # PYTHON -> P+Y+T+H+O+N
 
 
+frs = str(input('Digite algo: '))
+print(frs.replace("","+"))
+
+
+
+
 
 
 
