@@ -13,7 +13,6 @@ def escrever_texto(texto):
     arquivo.write(texto)
     arquivo.close()
 
-
 def ler_texto(nome_arquvio):
     arquivo = open('C:\\temp\\texto.txt', 'r')
     texto = arquivo.read()

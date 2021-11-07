@@ -38,9 +38,9 @@ bateu = True
 continuar = True
 while continuar:
 
-    if bateu:
+  if bateu:
       passo = random.randrange(1, 10)
- if random.random() < 0.5:
+      if random.random() < 0.5:
           passo = -passo
       bateu = False
 
@@ -86,8 +86,7 @@ while continuar:
       if (colIni - 20) > -1:
           colIni = colIni - 20
 
-
- barra.undraw()
+      barra.undraw()
       barra = Line(Point(colIni, 530), Point(colIni + 100, 530))
       barra.setFill(color_rgb(100, 10, 10))
       barra.setWidth(10)
@@ -97,5 +96,6 @@ while continuar:
   time.sleep(.07)
 
 win.close()
+
 
 
